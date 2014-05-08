@@ -15,13 +15,20 @@ namespace Kdyby\CurlCaBundle;
 class CertificateHelper
 {
 
-	public function setCurlOption($resource)
+	public static function setCurlCaInfo($resource)
 	{
 		if (!is_resource($resource) || get_resource_type($resource) !== 'curl') {
 			throw new \InvalidArgumentException("Invalid resource given, expected resource of type curl.");
 		}
 
-		curl_setopt($resource, CURLOPT_CAINFO, __DIR__ . '/ca-bundle.crt');
+		curl_setopt($resource, CURLOPT_CAINFO, self::getCaInfoFile());
+	}
+
+
+
+	public static function getCaInfoFile()
+	{
+		return __DIR__ . '/ca-bundle.crt';
 	}
 
 }

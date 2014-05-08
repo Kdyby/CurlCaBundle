@@ -23,12 +23,39 @@ if (!file_exists($script = $curlVendor . '/lib/mk-ca-bundle.pl')) {
 	throw new \RuntimeException("Script $script is not executable!");
 }
 
-echo "## cURL vendor setup successful\n\n";
+echo "\n";
 
 passthru(sprintf("%s", escapeshellcmd($script)), $return);
 if ($return != 0) {
 	throw new \RuntimeException("The certificate bundle cannot be downloaded");
 }
 
-echo "## certificate bundle download successful\n\n";
+echo "\n";
 
+chdir($root);
+
+exec("git rev-parse HEAD", $beforeRevision);
+$beforeRevision = trim(implode($beforeRevision));
+
+passthru(sprintf('git add src/ && git commit -m %s', escapeshellarg("Updated ca chain bundle [cron]")));
+passthru('git push origin master', $return);
+if ($return != 0) {
+	throw new \RuntimeException("Git: changes cannot be pushed");
+}
+
+exec("git rev-parse HEAD", $actualRevision);
+
+if ($beforeRevision !== trim(implode($actualRevision))) {
+	exec("git describe --abbrev=0 --tags", $lastTag);
+	$lastTag = explode('.', trim(implode($lastTag)));
+
+	end($lastTag);
+	$lastTag[key($lastTag)] = end($lastTag) + 1;
+	$newTag = implode('.', $lastTag);
+	passthru(sprintf('git tag %s', escapeshellarg($newTag)));
+	passthru('git push --tags origin', $return);
+
+	if ($return != 0) {
+		throw new \RuntimeException("Git: new tag cannot be pushed");
+	}
+}
