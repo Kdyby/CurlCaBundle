@@ -15,6 +15,9 @@
 	"require": {
 		"ext-curl": "*"
 	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "~0.6"
+	},
 	"support": {
 		"email": "filip@prochazka.su",
 		"issues": "https://github.com/Kdyby/CurlCaBundle/issues"
