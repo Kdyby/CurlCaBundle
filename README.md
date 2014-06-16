@@ -24,6 +24,28 @@ $ composer require kdyby/curl-ca-bundle:~1.0
 ```
 
 
+Usage
+-----
+
+Simply apply the function `Kdyby\CurlCaBundle\CertificateHelper::setCurlCaInfo()` to your cURL resource.
+
+```php
+$curl = curl_init("https://www.kdyby.org/");
+\Kdyby\CurlCaBundle\CertificateHelper::setCurlCaInfo($curl);
+$result = curl_exec($curl);
+```
+
+There is also a function that only returns the ca-bundle filename, if you wanna set the option yourself.
+
+```php
+$curl = curl_init("https://www.kdyby.org/");
+curl_setopt($curl, CURLOPT_CAINFO, \Kdyby\CurlCaBundle\CertificateHelper::getCaInfoFile());
+$result = curl_exec($curl);
+```
+
+And that's all folks!
+
+
 -----
 
 Homepage [http://www.kdyby.org](http://www.kdyby.org) and repository [http://github.com/Kdyby/CurlCaBundle](http://github.com/Kdyby/CurlCaBundle).
