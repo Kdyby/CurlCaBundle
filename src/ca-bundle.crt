@@ -1,17 +1,20 @@
 ##
-## ca-bundle.crt -- Bundle of CA Root Certificates
+## Bundle of CA Root Certificates
 ##
-## Certificate data from Mozilla as of: Thu Jan  1 00:00:00 1970
+## Certificate data from Mozilla as of: Tue Nov 22 13:37:53 2016 GMT
 ##
 ## This is a bundle of X.509 certificates of public Certificate Authorities
 ## (CA). These were automatically extracted from Mozilla's root certificates
 ## file (certdata.txt).  This file can be found in the mozilla source tree:
-## https://mxr.mozilla.org/mozilla-release/source/security/nss/lib/ckfw/builtins/certdata.txt?raw=1
+## https://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt
 ##
 ## It contains the certificates in PEM format and therefore
 ## can be directly used with curl / libcurl / php_curl, or with
 ## an Apache+mod_ssl webserver for SSL client authentication.
 ## Just configure this file as the SSLCACertificateFile.
+##
+## Conversion done with mk-ca-bundle.pl version 1.27.
+## SHA256: 17e2a90c8a5cfd6a675b3475d3d467e1ab1fe0d5397e907b08206182389caa08
 ##
 
 
@@ -1282,6 +1285,30 @@ FAkK+qDmfQjGGoe9GKhzvSbKYAydzpmfz1wPMOG+FDHqAjAU9JM8SaczepBGR7NjfRObTrdvGDeA
 U/7dIOA1mjbRxwG55tzd8/8dLDoWV9mSOdY=
 -----END CERTIFICATE-----
 
+IGC/A
+=====
+-----BEGIN CERTIFICATE-----
+MIIEAjCCAuqgAwIBAgIFORFFEJQwDQYJKoZIhvcNAQEFBQAwgYUxCzAJBgNVBAYTAkZSMQ8wDQYD
+VQQIEwZGcmFuY2UxDjAMBgNVBAcTBVBhcmlzMRAwDgYDVQQKEwdQTS9TR0ROMQ4wDAYDVQQLEwVE
+Q1NTSTEOMAwGA1UEAxMFSUdDL0ExIzAhBgkqhkiG9w0BCQEWFGlnY2FAc2dkbi5wbS5nb3V2LmZy
+MB4XDTAyMTIxMzE0MjkyM1oXDTIwMTAxNzE0MjkyMlowgYUxCzAJBgNVBAYTAkZSMQ8wDQYDVQQI
+EwZGcmFuY2UxDjAMBgNVBAcTBVBhcmlzMRAwDgYDVQQKEwdQTS9TR0ROMQ4wDAYDVQQLEwVEQ1NT
+STEOMAwGA1UEAxMFSUdDL0ExIzAhBgkqhkiG9w0BCQEWFGlnY2FAc2dkbi5wbS5nb3V2LmZyMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsh/R0GLFMzvABIaIs9z4iPf930Pfeo2aSVz2
+TqrMHLmh6yeJ8kbpO0px1R2OLc/mratjUMdUC24SyZA2xtgv2pGqaMVy/hcKshd+ebUyiHDKcMCW
+So7kVc0dJ5S/znIq7Fz5cyD+vfcuiWe4u0dzEvfRNWk68gq5rv9GQkaiv6GFGvm/5P9JhfejcIYy
+HF2fYPepraX/z9E0+X1bF8bc1g4oa8Ld8fUzaJ1O/Id8NhLWo4DoQw1VYZTqZDdH6nfK0LJYBcNd
+frGoRpAxVs5wKpayMLh35nnAvSk7/ZR3TL0gzUEl4C7HG7vupARB0l2tEmqKm0f7yd1GQOGdPDPQ
+tQIDAQABo3cwdTAPBgNVHRMBAf8EBTADAQH/MAsGA1UdDwQEAwIBRjAVBgNVHSAEDjAMMAoGCCqB
+egF5AQEBMB0GA1UdDgQWBBSjBS8YYFDCiQrdKyFP/45OqDAxNjAfBgNVHSMEGDAWgBSjBS8YYFDC
+iQrdKyFP/45OqDAxNjANBgkqhkiG9w0BAQUFAAOCAQEABdwm2Pp3FURo/C9mOnTgXeQp/wYHE4RK
+q89toB9RlPhJy3Q2FLwV3duJL92PoF189RLrn544pEfMs5bZvpwlqwN+Mw+VgQ39FuCIvjfwbF3Q
+MZsyK10XZZOYYLxuj7GoPB7ZHPOpJkL5ZB3C55L29B5aqhlSXa/oovdgoPaN8In1buAKBQGVyYsg
+Crpa/JosPL3Dt8ldeCUFP1YUmwza+zpI/pdpXsoQhvdOlgQITeywvl3cO45Pwf2aNjSaTFR+FwNI
+lQgRHAdvhQh+XU3Endv7rs6y0bO4g2wdsrN58dhwmX7wEwLOXt1R0982gaEbeC9xs/FZTEYYKKuF
+0mBWWg==
+-----END CERTIFICATE-----
+
 Security Communication EV RootCA1
 =================================
 -----BEGIN CERTIFICATE-----
@@ -1511,6 +1538,38 @@ fZleHwzoq0QkKXJAPTZSr4xYkHPB7GEseaHsh7U/2k3ZIQAw3pDaDtMaSKk+hQsUi4y8QZ5q9w5w
 wDX3OaJdZtB7WZ+oRxKaJyOkLY4ng5IgodcVf/EuGO70SH8vf/GhGLWhC5SgYiAynB321O+/TIho
 -----END CERTIFICATE-----
 
+EBG Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xc4\xb1\x63\xc4\xb1s\xc4\xb1
+==========================================================================
+-----BEGIN CERTIFICATE-----
+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
+-----END CERTIFICATE-----
+
 certSIGN ROOT CA
 ================
 -----BEGIN CERTIFICATE-----
@@ -1705,7 +1764,7 @@ AJw9SDkjOVgaFRJZap7v1VmyHVIsmXHNxynfGyphe3HR3vPA5Q06Sqotp9iGKt0uEA==
 -----END CERTIFICATE-----
 
 NetLock Arany (Class Gold) Főtanúsítvány
-============================================
+========================================
 -----BEGIN CERTIFICATE-----
 MIIEFTCCAv2gAwIBAgIGSUEs5AAQMA0GCSqGSIb3DQEBCwUAMIGnMQswCQYDVQQGEwJIVTERMA8G
 A1UEBwwIQnVkYXBlc3QxFTATBgNVBAoMDE5ldExvY2sgS2Z0LjE3MDUGA1UECwwuVGFuw7pzw610
@@ -1758,6 +1817,34 @@ CG19ndeNIdn8FCCqwkXfP+cAslHkwvgFuXkajDTznlvkN1trSt8sV4pAWja63XVECDdCcAz+3F4h
 oKOKwJCcaNpQ5kUQR3i2TtJlycM33+FCY7BXN0Ute4qcvwXqZVUz9zkQxSgqIXobisQk+T8VyJoV
 IPVVYpbtbZNQvOSqeK3Zywplh6ZmwcSBo3c6WB4L7oOLnR7SUqTMHW+wmG2UMbX4cQrcufx9MmDm
 66+KAQ==
+-----END CERTIFICATE-----
+
+Juur-SK
+=======
+-----BEGIN CERTIFICATE-----
+MIIE5jCCA86gAwIBAgIEO45L/DANBgkqhkiG9w0BAQUFADBdMRgwFgYJKoZIhvcNAQkBFglwa2lA
+c2suZWUxCzAJBgNVBAYTAkVFMSIwIAYDVQQKExlBUyBTZXJ0aWZpdHNlZXJpbWlza2Vza3VzMRAw
+DgYDVQQDEwdKdXVyLVNLMB4XDTAxMDgzMDE0MjMwMVoXDTE2MDgyNjE0MjMwMVowXTEYMBYGCSqG
+SIb3DQEJARYJcGtpQHNrLmVlMQswCQYDVQQGEwJFRTEiMCAGA1UEChMZQVMgU2VydGlmaXRzZWVy
+aW1pc2tlc2t1czEQMA4GA1UEAxMHSnV1ci1TSzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+ggEBAIFxNj4zB9bjMI0TfncyRsvPGbJgMUaXhvSYRqTCZUXP00B841oiqBB4M8yIsdOBSvZiF3tf
+TQou0M+LI+5PAk676w7KvRhj6IAcjeEcjT3g/1tf6mTll+g/mX8MCgkzABpTpyHhOEvWgxutr2TC
++Rx6jGZITWYfGAriPrsfB2WThbkasLnE+w0R9vXW+RvHLCu3GFH+4Hv2qEivbDtPL+/40UceJlfw
+UR0zlv/vWT3aTdEVNMfqPxZIe5EcgEMPPbgFPtGzlc3Yyg/CQ2fbt5PgIoIuvvVoKIO5wTtpeyDa
+Tpxt4brNj3pssAki14sL2xzVWiZbDcDq5WDQn/413z8CAwEAAaOCAawwggGoMA8GA1UdEwEB/wQF
+MAMBAf8wggEWBgNVHSAEggENMIIBCTCCAQUGCisGAQQBzh8BAQEwgfYwgdAGCCsGAQUFBwICMIHD
+HoHAAFMAZQBlACAAcwBlAHIAdABpAGYAaQBrAGEAYQB0ACAAbwBuACAAdgDkAGwAagBhAHMAdABh
+AHQAdQBkACAAQQBTAC0AaQBzACAAUwBlAHIAdABpAGYAaQB0AHMAZQBlAHIAaQBtAGkAcwBrAGUA
+cwBrAHUAcwAgAGEAbABhAG0ALQBTAEsAIABzAGUAcgB0AGkAZgBpAGsAYQBhAHQAaQBkAGUAIABr
+AGkAbgBuAGkAdABhAG0AaQBzAGUAawBzMCEGCCsGAQUFBwIBFhVodHRwOi8vd3d3LnNrLmVlL2Nw
+cy8wKwYDVR0fBCQwIjAgoB6gHIYaaHR0cDovL3d3dy5zay5lZS9qdXVyL2NybC8wHQYDVR0OBBYE
+FASqekej5ImvGs8KQKcYP2/v6X2+MB8GA1UdIwQYMBaAFASqekej5ImvGs8KQKcYP2/v6X2+MA4G
+A1UdDwEB/wQEAwIB5jANBgkqhkiG9w0BAQUFAAOCAQEAe8EYlFOiCfP+JmeaUOTDBS8rNXiRTHyo
+ERF5TElZrMj3hWVcRrs7EKACr81Ptcw2Kuxd/u+gkcm2k298gFTsxwhwDY77guwqYHhpNjbRxZyL
+abVAyJRld/JXIWY7zoVAtjNjGr95HvxcHdMdkxuLDF2FvZkwMhgJkVLpfKG6/2SSmuz+Ne6ML678
+IIbsSt4beDI3poHSna9aEhbKmVv8b20OxaAehsmR0FyYgl9jDIpaq9iVpszLita/ZEuOyoqysOkh
+Mp6qqIWYNIE5ITuoOlIyPfZrN4YGWhWY3PARZv40ILcD9EEQfTmEeZZyY7aWAuVrua0ZTbvGRNs2
+yyqcjg==
 -----END CERTIFICATE-----
 
 Hongkong Post Root CA 1
@@ -2193,7 +2280,7 @@ Zt3hrvJBW8qYVoNzcOSGGtIxQbovvi0TWnZvTuhOgQ4/WwMioBK+ZlgRSssDxLQqKi2WF+A5VLxI
 -----END CERTIFICATE-----
 
 Certinomis - Autorité Racine
-=============================
+============================
 -----BEGIN CERTIFICATE-----
 MIIFnDCCA4SgAwIBAgIBATANBgkqhkiG9w0BAQUFADBjMQswCQYDVQQGEwJGUjETMBEGA1UEChMK
 Q2VydGlub21pczEXMBUGA1UECxMOMDAwMiA0MzM5OTg5MDMxJjAkBgNVBAMMHUNlcnRpbm9taXMg
@@ -3588,7 +3675,7 @@ ekD6819kR5LLU7m7Wc5P/dAVUwHY3+vZ5nbv0CO7O6l5s9UCKc2Jo5YPSjXnTkLAdc0Hz+Ys63su
 -----END CERTIFICATE-----
 
 TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5
-=========================================================
+====================================================
 -----BEGIN CERTIFICATE-----
 MIIEJzCCAw+gAwIBAgIHAI4X/iQggTANBgkqhkiG9w0BAQsFADCBsTELMAkGA1UEBhMCVFIxDzAN
 BgNVBAcMBkFua2FyYTFNMEsGA1UECgxEVMOcUktUUlVTVCBCaWxnaSDEsGxldGnFn2ltIHZlIEJp
@@ -3612,7 +3699,7 @@ B59OTj+RdPsnnRHM3eaxynFNExc5JsUpISuTKWqW+qtB4Uu2NQvAmxU=
 -----END CERTIFICATE-----
 
 TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6
-=========================================================
+====================================================
 -----BEGIN CERTIFICATE-----
 MIIEJjCCAw6gAwIBAgIGfaHyZeyKMA0GCSqGSIb3DQEBCwUAMIGxMQswCQYDVQQGEwJUUjEPMA0G
 A1UEBwwGQW5rYXJhMU0wSwYDVQQKDERUw5xSS1RSVVNUIEJpbGdpIMSwbGV0acWfaW0gdmUgQmls
